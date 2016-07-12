@@ -1,15 +1,24 @@
+@font-face {
+    font-family: 'oranienbaumregular';
+    src: url('9930.woff2') format('woff2'),
+         url('9930.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body{
 	
 	-moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
-	font: 14px 'Verdana';
+	font-size: 14px;
     margin: 0;
     padding: 0;
 	background-image: url(homework4_fon.png);
 	background: linear-gradient(to bottom, #128aa7 28px, #10cde1 28px, #ffffff 185px, #40c6d3 185px, #0c739f);
-}
+    font-family: oranienbaumregular, Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+	}
 .clear {position: relative;width: 100%;height: 1px;clear: both; margin-bottom: -1px;}
 .clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
 .vertical-align {display: table-cell; vertical-align: middle;}
@@ -127,6 +136,7 @@ ul{
     font-size: 14px;
     left: 500px;
     margin: 10px;
+	margin-left:60px;
     position: absolute;
     top: 70px;
      overflow: auto;
@@ -159,6 +169,7 @@ ul{
      overflow: auto;
     z-index: 2; /* рамка должна быть над фото */
     cursor: pointer; /* чтобы IE вложенным элементам при наведении тоже показал правильный указатель */
+	
 }
 
 .ico-menu .title a {color: #0879b6;}
@@ -294,4 +305,10 @@ ul.menu > li {
    height: 25px;
    
    position: relative;
+}
+.content-title{
+text-align: justify;
+font-size:14px;
+padding-left:12px;
+padding-right:12px;
 }
